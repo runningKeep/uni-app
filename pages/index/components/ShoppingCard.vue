@@ -10,9 +10,9 @@
 			<view class="card-bottom">
 				<view>￥{{detail.price}}</view>
 				<view>
-					<template  v-if="count">
+					<template  v-if="itemCount()">
 						<text class="decress" @tap="decress">-</text>
-						<text class="check-count">{{count}}</text>
+						<text class="check-count">{{itemCount()}}</text>
 					</template>
 					<text @tap="add">+</text>
 				</view>
@@ -22,21 +22,25 @@
 </template>
 
 <script setup>
-	import { ref } from 'vue'
-	const props = defineProps({
+	import { ref,computed } from 'vue'
+import  useCartStore from '@/stores/cart.js'
+const props = defineProps({
 		detail:{
 			type:Object,
 			default:{}
 		}
 	})
-	const count = ref(0)
-		
-	const add = ()=>{
-		count.value++
+const count = ref(0)
+const carter = useCartStore()
+const add = ()=>{
+	carter.addProduct(props.detail)
 	}
-	const decress = ()=>{
-		count.value--
-	}
+const decress = ()=>{
+	carter.delProduct(props.detail.id)
+}
+const itemCount = ()=>{
+	return carter.getItemCount(props.detail.id)
+}
 </script>
 
 <style scoped lang="scss">

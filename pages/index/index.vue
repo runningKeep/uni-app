@@ -34,7 +34,9 @@ const title = ref('Hello-app')
 onReady(() => {
   console.log('onReady')
 })
-
+const handleMenuSelected = ()=>{
+	console.log('tap')
+}
 const categories = ref([])
 const currentCategoryId = ref('')
 const cards = ref([])

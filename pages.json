@@ -11,6 +11,7 @@
 			"style": {
 				"navigationBarTitleText": "喜茶GO",
 				"navigationStyle": "custom"
+				// "enablePullDownRefresh":true
 			}
 		}, {
 			"path": "pages/order/order",
@@ -18,7 +19,13 @@
 				"navigationStyle": "custom",
 				"disableScroll": true
 			}
-		}, {
+		}, 
+		{
+			"path": "pages/order/order-detail",
+			"style": {
+			}
+		},
+		{
 			"path": "pages/my/my",
 			"style": {
 				"navigationStyle": "custom"

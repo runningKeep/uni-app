@@ -25,6 +25,7 @@ export const mcards = [
 		name:'芝芝桃桃',
 		saleCount:88,
 		price:12,
+		id:1,
 		url:'https://go.cdn.heytea.com/storage/product/2020/05/18/fbcdfbd39c6548b185c1d0eef790808d.jpg',
 		tags:[]
 	},
@@ -32,6 +33,7 @@ export const mcards = [
 		name:'多肉杨梅',
 		saleCount:19,
 		price:20,
+		id:2,
 		url:'https://go.cdn.heytea.com/storage/product/2020/05/11/b95776a518d144ce8039a149c8ecf415.jpg',
 		tags:[]
 	},
@@ -39,6 +41,7 @@ export const mcards = [
 		name:'满杯红柚',
 		saleCount:78,
 		price:15,
+		id:3,
 		url:'https://go.cdn.heytea.com/storage/product/2020/03/04/66a64d27c2504838851ce69f2a901326.jpg',
 		tags:[]
 	},
@@ -46,11 +49,13 @@ export const mcards = [
 		name:'多肉葡萄',
 		saleCount:100,
 		price:13,
+		id:4,
 		tags:[],
 		url:'https://go.cdn.heytea.com/storage/product/2020/05/24/5ba38e1966334ff9af2ee27e1a803497.jpg'
 	},
 	{
 		name:'多肉芒芒甘露',
+		id:5,
 		saleCount:90,
 		price:15,
 		tags:[],
@@ -58,6 +63,7 @@ export const mcards = [
 	},
 	{
 		name:'桑葚莓莓',
+		id:6,
 		saleCount:68,
 		price:10,
 		tags:[],
@@ -65,6 +71,7 @@ export const mcards = [
 	},
 	{
 		name:'柠檬水',
+		id:7,
 		saleCount:1000,
 		price:4,
 		url:'https://go.cdn.heytea.com/storage/product/2020/03/04/66a64d27c2504838851ce69f2a901326.jpg',
